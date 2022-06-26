@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Lato&family=Merriweather&family=Mukta:wght@300&family=Nunito:wght@300&family=Playfair+Display:ital@1&family=Quicksand&display=swap');
+
+
+
+body {
+
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: #3F4E4F; 
+    position: relative;
+ }
+
+ #content {
+    width: 90%;
+    margin: auto;
+ }
+
+header {
+    display: inline;
+    width: 90%;
+    position: relative;
+    
+}
+
+ header nav {
+    position: sticky;
+    width: auto;
+    
+    
+ }
+
+ 
+ nav ul {
+    background-color: #06090b;
+    padding: 20px;
+    margin-top: 0%;
+    position: fixed;
+    width: 86%;
+    left: 5%;
+    margin: auto;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.028),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.04),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.05),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.06),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.072),
+  100px 100px 80px rgba(0, 0, 0, 0.1);
+
+border-radius: 20px;
+padding-bottom: 0%;
+
+ }
+
+ nav a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: aliceblue;
+    margin-right: 20px;
+   }
+  
+   nav a:hover {
+    font-weight: bold;
+  
+   }
+  
+   nav li {
+    display: inline;
+    list-style-type: none;
+   }
+
+   #home img {
+      width: 100%;
+      box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.028),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.04),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.05),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.06),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.072),
+  100px 100px 80px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+  border-radius: 20px;
+
+   }
+
+   .card {
+      width: 100%;
+      background-color: #06090b;
+      box-shadow:
+      2.8px 2.8px 2.2px rgba(0, 0, 0, 0.028),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.04),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.05),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.06),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.072),
+      100px 100px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      height: auto;
+      margin-top: 20px;
+
+   }
+
+   
+   h2 {
+      color: aliceblue;
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 20px;
+   }
+   
+   p{
+      color: aliceblue;
+      text-align: justify;
+      padding: 15px;
+      margin: 5px;
+      font-size: 14px;
+   }
+
+   #eart img {
+      float: left;
+      width: 25%;
+      border-radius: 20px;
+
+   }
+
+   
+
+   h3 {
+      color: aliceblue;
+      text-align: center;
+   }
+
+
+   .slider{
+      max-width: 30%;
+      /* The position of the element is set relative to its original position: */
+      position: relative;
+      /* Center horizontally: */
+      display: flex;
+      height: 300px;
+      border: 1px solid white;
+  }
+
+  .box1{
+    flex-grow: 1;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    
+}
+
+.box2{
+    flex-grow: 2;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+  .slider .item img {
+      /* The element is resized to fill the block and maintain proportions: */
+      object-fit: cover;
+      width: 100%;
+      height: 250px;
+  }
+  
+  .slider .previous, .slider .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: -30px;
+      color: aliceblue;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+  }
+  .slider .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+      padding-left: 25px;
+  }
+
+  .slider .previous:hover,
+  .slider .next:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .slider .item {
+      animation-name: fade;
+      animation-duration: 1.5s;
+  }
+  @keyframes fade {
+      
+      from {
+          opacity: 0.4
+      }
+      to {
+          opacity: 1
+      }
+  }
+
+  .clear {
+   clear: both;
+}
+
+
+   @media screen and (max-width: 1000px) {
+      #content,
+      aside {
+          width: 100%;
+          padding: 0;
+      }
+   }
+
